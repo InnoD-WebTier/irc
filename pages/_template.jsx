@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 
 require('css/_index.scss');
-const navbarHeight = 60;
 export default class Template extends Component {
   render () {
     return (
