@@ -10,21 +10,21 @@ export default class Template extends Component {
       <div>
         <Headroom>
           <div className="navbar">
-            <div className="navbar__link-wrapper">
+            <div className="navbar__link--wrapper">
               <Link
                 to={prefixLink('/')} className="navbar__link"
               >
                 <span>Home</span>
               </Link>
             </div>
-            <div className="navbar__link-wrapper">
+            <div className="navbar__link--wrapper">
               <Link
                 to={prefixLink('/about/')} className="navbar__link"
               >
                 About
               </Link>
             </div>
-            <div className="navbar__link-wrapper">
+            <div className="navbar__link--wrapper">
               <Link
                 to={prefixLink('/events/')} className="navbar__link"
               >
@@ -32,7 +32,7 @@ export default class Template extends Component {
               </Link>
             </div>
 
-            <div className="navbar__link-wrapper">
+            <div className="navbar__link--wrapper">
               <Link
                 to={prefixLink('/review/')} className="navbar__link"
               >
@@ -40,7 +40,7 @@ export default class Template extends Component {
               </Link>
             </div>
 
-            <div className="navbar__link-wrapper">
+            <div className="navbar__link--wrapper">
               <Link
                 to={prefixLink('/contact/')} className="navbar__link"
               >
