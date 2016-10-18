@@ -11,9 +11,11 @@ export default class Contact extends Component {
         <Helmet
           title={config.siteTitle}
         />
-        <h1>
+        <h1 className = "center">
           Contact
         </h1>
+        <a href="#"><img src='../img/fb.png' height="50" width="50" /></a>
+        <a href="#"><img src='../img/email.png' height="50" width="50" /></a>
       </div>
     );
   }
