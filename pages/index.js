@@ -29,6 +29,10 @@ export default class Index extends React.Component {
             <Link to={prefixLink('/html/')}>HTML</Link>
           </li>
         </ul>
+        // testing things out
+        <h2>Contact Us</h2>
+        <a href="#"><img src='../img/fb.png' height="50" width="50" /></a>
+        <a href="#"><img src='../img/email.png' height="50" width="50" /></a>
       </div>
     )
   }
