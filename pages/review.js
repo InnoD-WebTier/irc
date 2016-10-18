@@ -11,16 +11,14 @@ export default class Review extends Component {
         <Helmet
           title={config.siteTitle}
         />
-        <div className="page__title">
+        <div className="page--review__title">
           IRC Review
         </div>
-        <div className="page__content">
-          <div className="page__content__section">
-            <div className="page__heading">Application Guidelines</div>
-          </div>
-          <div className="page__content__section">
-            <div className="page__heading">Archives</div>
-          </div>
+        <div className="page--review__content">
+          <div className="page--review__col--1">Application Guidelines</div>
+          <div className="page--review__col--2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</div>
+          <div className="page--review__col--1">Archives</div>
+          <div className="page--review__col--2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</div>
         </div>
       </div>
     );

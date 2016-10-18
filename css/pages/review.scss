@@ -1,35 +1,88 @@
 // Review
-.page {
-	.page--review {
-		// code here
-	}
+.page {}
 
-	.page__title {
-		//
-	}
+.page--review {
+  color: #404040;
 
-	.page__content {
-		width: 80%;
+  .page--review__title {
+    text-align: center;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    margin: 40px;
+  }
 
-		.page__content__section {
-			display: inline-block;
+  @media (max-width: $s__breakpoint--small) {
+    .page--review__title {
+      margin-top: 1000px;
+    }
+  }
 
-			.page__heading {
-				font-size: 1.5em;
-			}
-		}
-	}
-}
 
-@media (max-width: $b__breakpoint--large) {
-}
+  .page--review__content {
+    width: 80%;
+    margin: 0 auto;
 
-@media (max-width: $b__breakpoint--small) {
-	div {
-		display: block;
-	}
+    div {
+      display: inline-block;
+    }
 
-	.page__content__section {
-		display: block;
-	}
+    .page--review__col--1 {
+      font-size: 1.5em;
+      width: 30%;
+      color: green;
+      vertical-align: top;
+    }
+
+    @media (max-width: $s__breakpoint--large) {
+      .page--review__col--1 {
+        margin: 10px;
+        width: 95%;
+      }
+    }
+
+    @media (max-width: $s__breakpoint--small) {
+      .page--review__col--1 {
+        // code here
+      }
+    }
+
+    .page--review__col--2 {
+      font-size: 1.1em;
+      width: 70%;
+      margin-bottom: 50px;
+
+    }
+
+    @media (max-width: $s__breakpoint--large) {
+      .page--review__col--2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        width: 95%;
+      }
+    }
+
+    @media (max-width: $s__breakpoint--small) {
+      .page--review__col--2 {
+        // code here
+      }
+    }
+  }
+
+  // breakpoints
+  @media (max-width: $s__breakpoint--large) {
+    .page--review__content {
+      div {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: $s__breakpoint--small) {
+    .page--review__content {
+      width: 100%;
+    }
+  }
 }
