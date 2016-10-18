@@ -1,19 +1,17 @@
 // Navbar styles
 .navbar {
-  width: 85%;
-  height: auto;
-  line-height: 1.2;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  background-color: $c__white;
+  max-height: $s__navbar-height;
+  transition: max-height 250ms;
+  background-color: $c__green;
 
-  @media (max-width: $s__breakpoint--large) {
-    width: 100%;
-  }
-
-  @media (max-width: $s__breakpoint--small) {
-    flex-direction: column;
+  .nav__hamburger {
+    display: none;
   }
 
   .navbar__link--wrapper {
@@ -24,9 +22,56 @@
     .navbar__link {
       text-decoration: none;
       color: $c__grey--light;
+      transition: color 200ms ease-in-out;
 
       &:hover {
         color: $c__black;
+      }
+    }
+  }
+  
+  // handle navbar change
+  @media (max-width: $s__breakpoint--collapse) {
+    .navbar__link--wrapper {
+      height: $s__navbar-height;
+
+      .navbar__link {
+        display: none;
+      }
+    }
+    
+    &.navbar--open {
+      flex-direction: column;
+      max-height: $s__navbar-height * 6;
+
+      .navbar__link {
+        display: block;
+      }
+    }
+  }
+  
+  // Done with the help of Julia! github.com/jubearsun
+  // handle hamburger appearance
+  @media (max-width: $s__breakpoint--collapse) {
+    .nav__hamburger {
+      display: inline-block;
+      height: $s__hamburger-height;
+      width: 34px;
+      margin: 0 auto;
+      margin-top: ($s__navbar-height - $s__hamburger-height) / 2;
+
+      .hamburger__bar {
+        width: 100%;
+        height: 2px;
+        background: $c__red;
+
+        &.bar--1 {
+          margin-top: 4px
+        }
+
+        &.bar--2 {
+          margin-top: 14px;
+        }
       }
     }
   }
