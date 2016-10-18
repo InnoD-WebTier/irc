@@ -1,7 +1,4 @@
-<<<<<<< caedf8f3b94c0d99c2a74dc4bf9db0e49d0c111c
-=======
 @import "Home"; 
->>>>>>> Update files
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { config } from 'config';
