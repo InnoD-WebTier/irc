@@ -1,0 +1,31 @@
+// Review
+.page {
+	.page--review {
+		// code here
+	}
+
+	.page__title {
+		//
+	}
+
+	.page__content {
+		width: 80%;
+
+		.page__content__section {
+			display: inline-block;
+		}
+	}
+}
+
+@media (max-width: $b__breakpoint--large) {
+}
+
+@media (max-width: $b__breakpoint--small) {
+	div {
+		display: block;
+	}
+
+	.page__content__section {
+		display: block;
+	}
+}
