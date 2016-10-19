@@ -16,15 +16,17 @@ export default class Contact extends Component {
           <h1>
             Contact
           </h1>
-        </div>
-            <a href="#" target="_blank">
+           <a href="#" target="_blank">
                   <FontAwesome
+                    className="media--icon fb"
                     name="facebook"
             /> </a>
             <a href="#" target="_blank">
                   <FontAwesome
+                    className="media--icon mail"
                     name="envelope"
-            /> </a>      
+            /> </a>   
+        </div>   
       </div>
     );
   }

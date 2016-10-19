@@ -7,13 +7,29 @@
 		width: 50%;
 		margin: 0 auto;
 		text-align: center;
+
+		a{
+			text-decoration: none !important;
+		}
 		
 		.media--icon{
-	      	background: $c__grey--light;
-	      	opacity: 80%;
-	      	border-radius: 20px;
-	      	padding: 0px 20px 0px 20px;
-	  }
+	      	font-size: 200%;
+	      	color: #C0C0C0;
+
+          &.fb {
+          	padding:0px 0px 0px 5px;
+            &:hover {
+              color: #3b5998;
+            }
+          }
+
+          &.mail {
+          	padding:0px 0px 0px 10px;
+            &:hover {
+              color: #551a8b;
+            }
+          }
+	  	}
 	}
 }
 

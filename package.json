@@ -17,10 +17,7 @@
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-sub": "^1.0.0",
     "object-assign": "^4.1.0",
-<<<<<<< HEAD
     "react-fontawesome": "^1.2.0",
-=======
->>>>>>> 821f68361054d34e7def5d9634bed3a9b6dd4a8d
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",
     "react-responsive-grid": "^0.3.3",
