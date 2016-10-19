@@ -42,15 +42,13 @@
           width: 95%;
         }
       }
-    }
 
-    // breakpoints for .review__content
-    @media (max-width: $s__breakpoint--large) {
-      .col {
+      @media (max-width: $s__breakpoint--large) {
         display: block;
       }
     }
 
+    // breakpoints for .review__content
     @media (max-width: $s__breakpoint--small) {
       width: 100%;
     }
