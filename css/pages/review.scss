@@ -1,10 +1,8 @@
 // Review
-.page {}
-
 .page--review {
   color: #404040;
 
-  .page--review__title {
+  .review__title {
     text-align: center;
     font-style: bold;
     font-weight: 700;
@@ -14,56 +12,47 @@
   }
 
 
-  .page--review__content {
+  .review__content {
     width: 80%;
     margin: 0 auto;
 
-    div {
+    .col {
       display: inline-block;
-    }
 
-    .page--review__col--1 {
-      font-size: 1.5em;
-      width: 30%;
-      color: green;
-      vertical-align: top;
-    }
+      &.col--1 {
+        font-size: 1.5em;
+        width: 30%;
+        color: green;
+        vertical-align: top;
 
-    @media (max-width: $s__breakpoint--large) {
-      .page--review__col--1 {
-        margin: 10px;
-        width: 95%;
+        @media (max-width: $s__breakpoint--large) {
+          margin: 10px;
+          width: 95%;
+        }
+      }
+
+      &.col--2 {
+        font-size: 1.1em;
+        width: 70%;
+        margin-bottom: 50px;
+
+        @media (max-width: $s__breakpoint--large) {
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 20px;
+          width: 95%;
+        }
       }
     }
 
-    .page--review__col--2 {
-      font-size: 1.1em;
-      width: 70%;
-      margin-bottom: 50px;
-
-    }
-
+    // breakpoints for .review__content
     @media (max-width: $s__breakpoint--large) {
-      .page--review__col--2 {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 20px;
-        width: 95%;
-      }
-    }
-  }
-
-  // breakpoints
-  @media (max-width: $s__breakpoint--large) {
-    .page--review__content {
-      div {
+      .col {
         display: block;
       }
     }
-  }
 
-  @media (max-width: $s__breakpoint--small) {
-    .page--review__content {
+    @media (max-width: $s__breakpoint--small) {
       width: 100%;
     }
   }
