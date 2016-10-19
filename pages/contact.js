@@ -1,5 +1,5 @@
-@import "Home"; 
 import React, { Component } from 'react';
+import FontAwesome from 'react-fontawesome';
 import Helmet from 'react-helmet';
 import { config } from 'config';
 import { Link } from 'react-router';
@@ -12,11 +12,19 @@ export default class Contact extends Component {
         <Helmet
           title={config.siteTitle}
         />
-        <h1 className = "center">
-          Contact
-        </h1>
-        <a href="#"><img src='../img/fb.png' height="50" width="50" /></a>
-        <a href="#"><img src='../img/email.png' height="50" width="50" /></a>
+        <div className="contact--center">
+          <h1>
+            Contact
+          </h1>
+        </div>
+            <a href="#" target="_blank">
+                  <FontAwesome
+                    name="facebook"
+            /> </a>
+            <a href="#" target="_blank">
+                  <FontAwesome
+                    name="envelope"
+            /> </a>      
       </div>
     );
   }
