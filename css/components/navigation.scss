@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
+  opacity: 0.98;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -41,10 +42,11 @@
   @media (max-width: $s__breakpoint--small) {
     max-height: $s__navbar-height + 5;
 
+
     .navbar__link--wrapper {
       height: $s__navbar-height;
       padding: 0;
-
+      
       .navbar__link {
         display: none;
       }
@@ -53,15 +55,11 @@
     &.navbar--open {
       flex-direction: column;
       max-height: $s__navbar-height * 7;
+      box-shadow: 0 1px 0px 1px rgba($c__grey, 0.20);
 
       .navbar__link--wrapper {
-        width: 85%;
-        transition: box-shadow 200ms ease-in-out;
-
-        &:hover {
-          box-shadow: 0 1px 1px 1px rgba($c__grey, 0.15);
-        }
-
+        width: 100%;
+        
         .navbar__link {
           text-align: center;
           display: block;

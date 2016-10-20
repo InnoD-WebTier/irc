@@ -29,56 +29,72 @@ export default class Template extends Component {
   render () {
     return (
       <div>
-        <Headroom wrapperStyle={{
+        <Headroom 
+          wrapperStyle={{
             maxHeight: navbar_height
           }}>
-          <div className={classNames("navbar", {
+            <div className={classNames("navbar", {
               "navbar--open": this.state.open
             })}>
-            <div
+              <div
                 className={classNames("navbar__hamburger", {
                   "navbar__hamburger--active": this.state.open
                 })}
                 onClick={this._handleHamburger}
               >
-              <div className="hamburger__bar bar--1"></div>
-              <div className="hamburger__bar bar--2"></div>
-            </div>
-            <div className="navbar__link--wrapper" onClick={this._handleHamburger}>
-              <Link
-                to={prefixLink('/')} className="navbar__link"
-              >
-                Home
-              </Link>
-            </div>
-            <div className="navbar__link--wrapper" onClick={this._handleHamburger}>
-              <Link
-                to={prefixLink('/about/')} className="navbar__link"
-              >
-                About
-              </Link>
-            </div>
-            <div className="navbar__link--wrapper" onClick={this._handleHamburger}>
-              <Link
-                to={prefixLink('/events/')} className="navbar__link"
-              >
-                Events
-              </Link>
-            </div>
-            <div className="navbar__link--wrapper" onClick={this._handleHamburger}>
-              <Link
-                to={prefixLink('/review/')} className="navbar__link"
-              >
-                Review
-              </Link>
-            </div>
-            <div className="navbar__link--wrapper" onClick={this._handleHamburger}>
-              <Link
-                to={prefixLink('/contact/')} className="navbar__link"
-              >
-                Contact
-              </Link>
-            </div>
+                <div className="hamburger__bar bar--1"></div>
+                <div className="hamburger__bar bar--2"></div>
+              </div>
+              <div 
+                className="navbar__link--wrapper" 
+                onClick={this._handleHamburger}>
+                  <Link
+                    to={prefixLink('/')} 
+                    className="navbar__link"
+                  >
+                    Home
+                  </Link>
+              </div>
+              <div 
+                className="navbar__link--wrapper" 
+                onClick={this._handleHamburger}>
+                  <Link
+                    to={prefixLink('/about/')} 
+                    className="navbar__link"
+                  >
+                    About
+                  </Link>
+              </div>
+              <div 
+                className="navbar__link--wrapper" 
+                onClick={this._handleHamburger}>
+                  <Link
+                    to={prefixLink('/events/')} 
+                    className="navbar__link"
+                  >
+                    Events
+                  </Link>
+              </div>
+              <div 
+                className="navbar__link--wrapper" 
+                onClick={this._handleHamburger}>
+                  <Link
+                    to={prefixLink('/review/')} 
+                    className="navbar__link"
+                  >
+                    Review
+                  </Link>
+              </div>
+              <div 
+                className="navbar__link--wrapper" 
+                onClick={this._handleHamburger}>
+                  <Link
+                    to={prefixLink('/contact/')} 
+                    className="navbar__link"
+                  >
+                    Contact
+                  </Link>
+              </div>
           </div>
         </Headroom>
         <div className="content">
