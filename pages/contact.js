@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
 import Helmet from 'react-helmet';
 import { config } from 'config';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
+import FontAwesome from 'react-fontawesome';
 
 export default class Contact extends Component {
   render () {
@@ -13,21 +13,25 @@ export default class Contact extends Component {
           title={config.siteTitle}
         />
         <div className="contact--center">
-          <h1>
+
+          <div className="contact--title">
             Contact
-          </h1>
+          </div>
+
           <a href="#" target="_blank">
             <FontAwesome
               className="media--icon fb"
               name="facebook"
             /> 
           </a>
+
           <a href="#" target="_blank">
             <FontAwesome
               className="media--icon mail"
               name="envelope"
             /> 
-          </a>   
+          </a> 
+
         </div>   
       </div>
     );
