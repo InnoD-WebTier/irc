@@ -1,27 +1,34 @@
 // Navbar styles
+
 .navbar {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   max-height: $s__navbar-height;
   transition: max-height 250ms;
-  background-color: $c__green;
+  background-color: $c__white;
 
-  .nav__hamburger {
+  .navbar__hamburger {
     display: none;
   }
 
   .navbar__link--wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 5px;
     align-self: center;
+    background-color: $c__white;
 
     .navbar__link {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
       text-decoration: none;
-      color: $c__grey--light;
+      color: $c__grey;
       transition: color 200ms ease-in-out;
 
       &:hover {
@@ -31,9 +38,12 @@
   }
   
   // handle navbar change
-  @media (max-width: $s__breakpoint--collapse) {
+  @media (max-width: $s__breakpoint--small) {
+    max-height: $s__navbar-height + 5;
+
     .navbar__link--wrapper {
       height: $s__navbar-height;
+      padding: 0;
 
       .navbar__link {
         display: none;
@@ -42,28 +52,40 @@
     
     &.navbar--open {
       flex-direction: column;
-      max-height: $s__navbar-height * 6;
+      max-height: $s__navbar-height * 7;
 
-      .navbar__link {
-        display: block;
+      .navbar__link--wrapper {
+        width: 85%;
+        transition: box-shadow 200ms ease-in-out;
+
+        &:hover {
+          box-shadow: 0 1px 1px 1px rgba($c__grey, 0.15);
+        }
+
+        .navbar__link {
+          text-align: center;
+          display: block;
+        }
       }
     }
   }
   
   // Done with the help of Julia! github.com/jubearsun
   // handle hamburger appearance
-  @media (max-width: $s__breakpoint--collapse) {
-    .nav__hamburger {
+  @media (max-width: $s__breakpoint--small) {
+    .navbar__hamburger {
       display: inline-block;
       height: $s__hamburger-height;
       width: 34px;
       margin: 0 auto;
-      margin-top: ($s__navbar-height - $s__hamburger-height) / 2;
+      margin-top: 15px;
+      margin-bottom: 10px;
 
       .hamburger__bar {
         width: 100%;
         height: 2px;
-        background: $c__red;
+        background: $c__black;
+        transition: transform 0.25s;
 
         &.bar--1 {
           margin-top: 4px
