@@ -6,7 +6,7 @@ import classNames from 'classnames';
 
 require('css/_index.scss');
 
-const navbar_height = 54;
+const navbarHeight = 54;
 
 export default class Template extends Component {
   
@@ -31,7 +31,7 @@ export default class Template extends Component {
       <div>
         <Headroom 
           wrapperStyle={{
-            maxHeight: navbar_height
+            maxHeight: navbarHeight
           }}>
             <div className={classNames("navbar", {
               "navbar--open": this.state.open
