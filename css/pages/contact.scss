@@ -20,13 +20,14 @@
 		.media--icon {
 	    font-size:200%;
 	    color:#C0C0C0;
-	    padding-top: 15px;
-	    margin-right:15px;
+	    padding-top: 40px;
 	 
       &.fb {  
+      	margin-right:30px;
         &:hover {
           color:#3b5998;
         	transition:color 250ms;
+
         }
       }
 
