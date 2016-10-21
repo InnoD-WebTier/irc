@@ -1,2 +1,67 @@
 // About
+.page--about {
+	margin-left: 50px;
+	margin-right: 50px;
 
+	.history{
+
+	}
+
+	.organizations {
+		
+	}
+
+
+	.flex-grid {
+	  display: flex;
+
+	  .col{
+	  	flex: 1;
+	  }
+	}
+
+	.leadership--grid--1 {
+	  display: flex;
+	  justify-content: space-between;
+	  overflow: auto;
+
+	  .col {
+	  	width: 300px;
+
+	  }
+	}
+
+	.leadership--grid--2 {
+	  display: flex;
+	  justify-content: space-between;
+	  overflow: auto;
+
+	  .col {
+	  	width: 300px;
+	  }
+	}
+
+	.leadership--grid--3 {
+	  display: flex;
+	  justify-content: space-between;
+	  overflow: auto;
+
+	  .col {
+	  	width: 300px;
+	  }
+	}
+
+	@media (max-width: 400px) {
+	  .flex-grid,
+	  .leadership--grid--1,
+	  .leadership--grid--2,
+	  .leadership--grid--3{
+	    display: block;
+	    .col {
+	      width: 100%;
+	      margin: 0 0 10px 0;
+	    }
+	  }
+	}
+
+}
