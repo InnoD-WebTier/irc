@@ -27,11 +27,8 @@
           padding: 0px 25px;
 
           @media (max-width: $s__breakpoint--large) {
-            width: 100%;
-          }
-
-          @media (max-width: $s__breakpoint--small) {
             text-align: center;
+            width: 100%;
           }
         }
 
