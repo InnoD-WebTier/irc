@@ -108,4 +108,3 @@ export default class Template extends Component {
 Template.propTypes = {
   children: PropTypes.any
 };
-
