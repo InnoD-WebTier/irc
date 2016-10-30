@@ -20,7 +20,7 @@ export default class Template extends Component {
   }
 
   _handleHamburger(e) {
-    e.preventDefault();
+    //e.preventDefault();
     this.setState({
       open: !this.state.open
     });
@@ -45,55 +45,42 @@ export default class Template extends Component {
                 <div className="hamburger__bar bar--1"></div>
                 <div className="hamburger__bar bar--2"></div>
               </div>
-              <div 
-                className="navbar__link--wrapper" 
-                onClick={this._handleHamburger}>
-                  <Link
-                    to={prefixLink('/')} 
-                    className="navbar__link"
-                  >
-                    Home
-                  </Link>
-              </div>
-              <div 
-                className="navbar__link--wrapper" 
-                onClick={this._handleHamburger}>
-                  <Link
-                    to={prefixLink('/about/')} 
-                    className="navbar__link"
-                  >
-                    About
-                  </Link>
-              </div>
-              <div 
-                className="navbar__link--wrapper" 
-                onClick={this._handleHamburger}>
-                  <Link
-                    to={prefixLink('/events/')} 
-                    className="navbar__link"
-                  >
-                    Events
-                  </Link>
-              </div>
-              <div 
-                className="navbar__link--wrapper" 
-                onClick={this._handleHamburger}>
-                  <Link
-                    to={prefixLink('/review/')} 
-                    className="navbar__link"
-                  >
-                    Review
-                  </Link>
-              </div>
-              <div 
-                className="navbar__link--wrapper" 
-                onClick={this._handleHamburger}>
-                  <Link
-                    to={prefixLink('/contact/')} 
-                    className="navbar__link"
-                  >
-                    Contact
-                  </Link>
+              <div className="navbar__link--wrapper">
+                <Link
+                  to={prefixLink('/')} 
+                  className="navbar__link"
+                  onClick={this._handleHamburger}
+                >
+                  Home
+                </Link>
+                <Link
+                  to={prefixLink('/about/')} 
+                  className="navbar__link"
+                  onClick={this._handleHamburger}
+                >
+                  About
+                </Link>
+              <Link
+                to={prefixLink('/events/')} 
+                className="navbar__link"
+                onClick={this._handleHamburger}
+              >
+                Events
+              </Link>
+                <Link
+                  to={prefixLink('/review/')} 
+                  className="navbar__link"
+                  onClick={this._handleHamburger}
+                >
+                  Review
+                </Link>
+                <Link
+                  to={prefixLink('/contact/')} 
+                  className="navbar__link"
+                  onClick={this._handleHamburger}
+                >
+                  Contact
+                </Link>
               </div>
           </div>
         </Headroom>

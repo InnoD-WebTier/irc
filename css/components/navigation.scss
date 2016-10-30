@@ -1,96 +1,100 @@
-// Navbar styles
+// Navbar styles, ty julia and christian
+
+*,
+*::before,
+*::after {
+  position: relative;
+  box-sizing: border-box;
+}
 
 .navbar {
   width: 100%;
-  height: auto;
-  margin: 0 auto;
   opacity: 0.98;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  overflow: hidden;
+  text-align: center;
   max-height: $s__navbar-height;
   transition: max-height 250ms;
   background-color: $c__white;
 
   .navbar__hamburger {
     display: none;
+    position: absolute;
+    top: $s__navbar-height * 0.25;
+    right: $s__navbar-height * 0.25;
+    height: $s__navbar-height * 0.5;
+    width: $s__navbar-height * 0.5;
+    
+    .hamburger__bar {
+      position: absolute;
+      background: $c__black;
+      width: 100%;
+      height: 2px;
+      transition: all 250ms;
+      
+      &.bar--1 {
+        top: 4px;
+      }
+      
+      &.bar--2 {
+        top: 20px;
+      }
+    }
   }
 
   .navbar__link--wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 5px;
-    align-self: center;
-    background-color: $c__white;
+    margin: 0 auto;
+    width: 95%;
 
     .navbar__link {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
       text-decoration: none;
-      color: $c__grey;
-      transition: color 200ms ease-in-out;
+      display: inline-block;
+      color: $c__grey--light;
+      line-height: $s__navbar-height;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin: 0 24px;
 
       &:hover {
         color: $c__black;
+        transition: color 250ms;
       }
-    }
+    } 
   }
   
   // handle navbar change
   @media (max-width: $s__breakpoint--small) {
-    max-height: $s__navbar-height + 5;
-
-
+    .navbar__hamburger {
+      margin: 0 auto;
+      display: block;
+    }
+    
     .navbar__link--wrapper {
-      height: $s__navbar-height;
-      padding: 0;
+      margin-top: $s__navbar-height;
       
       .navbar__link {
-        display: none;
+        display: block;
+        // changed for more space to click
+        padding-top: 16px; 
+        padding-bottom: 16px;
+        margin: 10px 0px;
+        line-height: 1;
       }
     }
     
     &.navbar--open {
-      flex-direction: column;
-      max-height: $s__navbar-height * 7;
-      box-shadow: 0 1px 0px 1px rgba($c__grey, 0.20);
+      max-height: ($s__navbar-height * 7) + (32 * 7);
+      
+      .navbar__hamburger {
+        .hamburger__bar {
+          &.bar--1 {
+            top: 12px;
+            transform: rotate(45deg);
+          }
 
-      .navbar__link--wrapper {
-        width: 100%;
-        
-        .navbar__link {
-          text-align: center;
-          display: block;
-        }
-      }
-    }
-  }
-  
-  // Done with the help of Julia! github.com/jubearsun
-  // handle hamburger appearance
-  @media (max-width: $s__breakpoint--small) {
-    .navbar__hamburger {
-      display: inline-block;
-      height: 20px;
-      width: 34px;
-      margin: 0 auto;
-      margin-top: 15px;
-      margin-bottom: 10px;
-
-      .hamburger__bar {
-        width: 100%;
-        height: 2px;
-        background: $c__black;
-        transition: transform 0.25s;
-
-        &.bar--1 {
-          margin-top: 4px
-        }
-
-        &.bar--2 {
-          margin-top: 14px;
+          &.bar--2 {
+            top: 12px;
+            transform: rotate(-45deg);
+          }
         }
       }
     }
