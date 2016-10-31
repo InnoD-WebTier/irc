@@ -10,10 +10,10 @@
 .navbar {
   width: 100%;
   opacity: 0.98;
+  transition: max-height 250ms;
   overflow: hidden;
   text-align: center;
   max-height: $s__navbar-height;
-  transition: max-height 250ms;
   background-color: $c__white;
 
   .navbar__hamburger {
@@ -47,16 +47,17 @@
 
     .navbar__link {
       text-decoration: none;
+      text-transform: uppercase;
       display: inline-block;
       color: $c__grey--light;
       line-height: $s__navbar-height;
+      transition: color 250ms;
       padding-left: 24px;
       padding-right: 24px;
       margin: 0 24px;
 
       &:hover {
         color: $c__black;
-        transition: color 250ms;
       }
     } 
   }
@@ -72,8 +73,8 @@
       margin-top: $s__navbar-height;
       
       .navbar__link {
+        // changed padding for more space to click
         display: block;
-        // changed for more space to click
         padding-top: 16px; 
         padding-bottom: 16px;
         margin: 10px 0px;

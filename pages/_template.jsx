@@ -20,7 +20,6 @@ export default class Template extends Component {
   }
 
   _handleHamburger(e) {
-    //e.preventDefault();
     this.setState({
       open: !this.state.open
     });
@@ -60,13 +59,13 @@ export default class Template extends Component {
                 >
                   About
                 </Link>
-              <Link
-                to={prefixLink('/events/')} 
-                className="navbar__link"
-                onClick={this._handleHamburger}
-              >
-                Events
-              </Link>
+                <Link
+                  to={prefixLink('/events/')} 
+                  className="navbar__link"
+                  onClick={this._handleHamburger}
+                >
+                  Events
+                </Link>
                 <Link
                   to={prefixLink('/review/')} 
                   className="navbar__link"
