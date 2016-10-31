@@ -20,8 +20,6 @@ export default class Contact extends Component {
         <div className="page__content">
           <div className="col col--1">International Relations Council </div>
           <div className="col col--2">
-            <div className="col--2__section">To contact the IRC, please send us an email!
-            <br />
             <a href="#" target="_blank">
               <FontAwesome
                 className="media__icon fb"
@@ -36,8 +34,6 @@ export default class Contact extends Component {
               /> 
             </a>  
             </div>
-            </div>
-          <br />
 
             <div className="col col--1">Amnesty International</div>
             <div className="col col--2">
