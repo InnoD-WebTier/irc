@@ -7,23 +7,31 @@
 		text-align: center;
 	}
 
+	.table {
+		width: 100%;
+		height: 280px;
 
-
-	.organizations {
-		
-	}
-
-
-	.grid {
-		.col {
-			height: 300px;
-			width: 32%;
-
-			img {
-				height: 100%;
-				width: 100%;
-			}
+		h4 {
+			padding: 0px;
+			margin: 0px;
 		}
-	}
 
+		img {
+			height: 100%;
+			width: 30%;
+			float: left;
+			margin-right: 1%;
+		}
+
+		.desc {
+			text-align: left;
+			width: 100%;
+			height: 280px;
+			margin-bottom: 1%;
+			 @media (max-width:$s__breakpoint--small) {
+    		text-align:center;
+    		float: break;
+    	}
+		}
+	}	
 }
