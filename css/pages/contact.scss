@@ -1,14 +1,23 @@
 //Contact
 .page--contact {
-    a {
-      text-decoration:none !important;
-    }
+  .contact__name{
+    font-size: 27px;
+    color: teal;
+    vertical-align: top;
+    text-align: center;
+    padding: 0px 25px;
+  }
 
+  a {
+    text-decoration:none !important;
+  }
+  .contact__icons {
+    text-align: center;
     .media__icon {
       font-size:200%;
       color:#C0C0C0;
-      padding-top:10px;
-      padding-bottom:10px;
+      padding-top:20px;
+      padding-bottom:40px;
 
       &.fb {
         margin-right:30px;
@@ -16,16 +25,16 @@
         &:hover {
           color:#3b5998;
           transition:color 250ms;
+          }
+        }
+
+        &.mail {
+          &:hover {
+            color:#551a8b;
+            transition:color 250ms;
+          }
         }
       }
-
-      &.mail {
-        &:hover {
-          color:#551a8b;
-          transition:color 250ms;
-        }
-      }
-
 	}
 }
 

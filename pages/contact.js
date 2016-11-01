@@ -18,8 +18,8 @@ export default class Contact extends Component {
         </div>
 
         <div className="page__content">
-          <div className="col col--1">International Relations Council </div>
-          <div className="col col--2">
+          <div className="contact__name">International Relations Council </div>
+          <div className="contact__icons">
             <a href="#" target="_blank">
               <FontAwesome
                 className="media__icon fb"
@@ -35,8 +35,8 @@ export default class Contact extends Component {
             </a>  
             </div>
 
-            <div className="col col--1">Amnesty International</div>
-            <div className="col col--2">
+            <div className="contact__name">Amnesty International</div>
+            <div className="contact__icons">
              <a href="#" target="_blank">
               <FontAwesome
                 className="media__icon fb"
@@ -51,10 +51,9 @@ export default class Contact extends Component {
                 /> 
               </a> 
             </div>
-            <br />
 
-            <div className="col col--1">Berkeley Model United Nations</div>
-            <div className="col col--2">
+            <div className="contact__name">Berkeley Model United Nations</div>
+            <div className="contact__icons">
               <a href="#" target="_blank">
                 <FontAwesome
                   className="media__icon fb"
@@ -69,10 +68,9 @@ export default class Contact extends Component {
                 /> 
               </a>
             </div> 
-            <br />
 
-            <div className="col col--1">Delta Phi Epsilon</div> 
-            <div className="col col--2"> 
+            <div className="contact__name">Delta Phi Epsilon</div> 
+            <div className="contact__icons"> 
               <a href="#" target="_blank">
                 <FontAwesome
                   className="media__icon fb"
@@ -87,10 +85,9 @@ export default class Contact extends Component {
                 /> 
               </a> 
             </div>
-            <br />
 
-            <div className="col col--1">Sigma Iota Rho</div>
-            <div className="col col--2">
+            <div className="contact__name">Sigma Iota Rho</div>
+            <div className="contact__icons">
               <a href="#" target="_blank">
                 <FontAwesome
                   className="media__icon fb"
@@ -105,10 +102,9 @@ export default class Contact extends Component {
                 /> 
               </a>
             </div>
-            <br />
 
-            <div className="col col--1">UC Berkeley Model United Nations</div>
-            <div className="col col--2">
+            <div className="contact__name">UC Berkeley Model United Nations</div>
+            <div className="contact__icons">
               <a href="#" target="_blank">
                 <FontAwesome
                   className="media__icon fb"
