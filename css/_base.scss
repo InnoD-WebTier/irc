@@ -53,15 +53,15 @@
             }
 
             a {
-              color:black;
+              color:teal;
             }
 
             a:hover {
-              color: teal;
+              color: lighten(teal, 15%);
             }
 
             a:visited {
-              color:teal;
+              color: lighten(teal, 15%);
             }
           }
 
