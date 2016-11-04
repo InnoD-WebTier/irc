@@ -54,18 +54,14 @@
 
             a {
               color:teal;
-            }
 
-            a:hover {
+              &:hover {
               color: lighten(teal, 15%);
               -o-transition: color .2s;
               -ms-transition: color .2s;
               -moz-transition: color .2s;
               -webkit-transition: color .2s;
-            }
-
-            a:visited {
-              color: lighten(teal, 15%);
+              }
             }
           }
 
