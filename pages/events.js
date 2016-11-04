@@ -19,7 +19,7 @@ export default class Events extends Component {
             <div className="col col--1">Upcoming Events</div>
             <div className="col col--2">
               <div className="col--2__title">November 13th - Submission deadline for the International Relations Review of Berkeley.</div>
-              <div className="col--2__section">Click here (link to IRC Review page) for more information about the submission process.
+              <div className="col--2__section">Click <a href={ prefixLink(/review/) }>here</a> for more information about the submission process.
               </div>
             </div>
             <div className="col col--1">Case Competitions</div>
