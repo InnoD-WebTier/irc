@@ -9,15 +9,9 @@
 
 	.table {
 		width: 100%;
-		height: 280px;
-
-		h4 {
-			padding: 0px;
-			margin: 0px;
-		}
+		height: 320px;
 
 		img {
-			height: 100%;
 			width: 30%;
 			float: left;
 			margin-right: 1%;
@@ -28,10 +22,25 @@
 			width: 100%;
 			height: 280px;
 			margin-bottom: 1%;
-			 @media (max-width:$s__breakpoint--small) {
+
+
+			h4 {
+				font-size: 18px;
+	            font-weight: 600;
+	            color: teal;
+			}
+			
+			@media (max-width:$s__breakpoint--large) {
     		text-align:center;
     		float: break;
     	}
+			 
+			 @media (max-width:$s__breakpoint--small) {
+    		text-align:center;
+    		float: break;
+    		overflow: auto;
+    	}
+
 		}
 	}	
 }
