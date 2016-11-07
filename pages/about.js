@@ -16,95 +16,95 @@ export default class About extends Component {
 	     </div>
 	     <div className="page__content">
 	     	<div className="col col--1">History</div>
-	     		<div className="col col--2">
-	     			<div className="col--2__section">
-		     			The International Relations Council (IRC) of Berkeley was founded in Fall 2016 by five student
-	            organizations: Delta Phi Epsilon, UC Berkeley Model United Nations, Berkeley Model United Nations, 
-	            Sigma Iota Rho, and Amnesty International. The mission of the Council is to facilitate dialogue on global 
-	            issues and encourage cooperation between organizations related to the field of international relations.
-            <p>
-	            In order to raise awareness of global issues and provide students with opportunities to engage with 
-	            international relations, history and politics on a professional platform, the IRC of Berkeley hosts several 
-	            semesterly events, including publishing an academic journal and hosting a case competition to foster 
-	            solutions for pressing international issues. 
-            </p>
-	     		</div>
+     		<div className="col col--2">
+     			<div className="col--2__section">
+	     			The International Relations Council (IRC) of Berkeley was founded in Fall 2016 by five student
+            organizations: Delta Phi Epsilon, UC Berkeley Model United Nations, Berkeley Model United Nations, 
+            Sigma Iota Rho, and Amnesty International. The mission of the Council is to facilitate dialogue on global 
+            issues and encourage cooperation between organizations related to the field of international relations.
+          <p>
+            In order to raise awareness of global issues and provide students with opportunities to engage with 
+            international relations, history and politics on a professional platform, the IRC of Berkeley hosts several 
+            semesterly events, including publishing an academic journal and hosting a case competition to foster 
+            solutions for pressing international issues. 
+          </p>
+     		</div>
 	     	</div>
 
 	     	<div className="col col--1">Organizations</div>
-	     		<div className="col col--2">
-	     			<div className="col--2__section">
-	     				<div className="col--2__title">
-              	Amnesty International
-            	</div>
-	     					<p>
-	     						Founded in London in 1961, Amnesty International is a Nobel Prize-winning grassroots activist organization with over
-            			2.8 million members worldwide. Amnesty International undertakes research and action focused on preventing and ending 
-			            grave abuses of the rights to physical and mental integrity, freedom of conscience and expression, and freedom from 
-			            discrimination, within the context of its work to promote all human rights. The UC Berkeley chapter of Amnesty International
-			            works to promote human rights within our collegiate student body through advocacy, education, action, and service. 
-			            Our past events have included peaceful public demonstrations, film festivals, speakers, letter writing campaigns, and more!
-	            	</p>
+     		<div className="col col--2">
+     			<div className="col--2__section">
+     				<div className="col--2__title">
+            	Amnesty International
+          	</div>
+     					<p>
+     						Founded in London in 1961, Amnesty International is a Nobel Prize-winning grassroots activist organization with over
+          			2.8 million members worldwide. Amnesty International undertakes research and action focused on preventing and ending 
+		            grave abuses of the rights to physical and mental integrity, freedom of conscience and expression, and freedom from 
+		            discrimination, within the context of its work to promote all human rights. The UC Berkeley chapter of Amnesty International
+		            works to promote human rights within our collegiate student body through advocacy, education, action, and service. 
+		            Our past events have included peaceful public demonstrations, film festivals, speakers, letter writing campaigns, and more!
+            	</p>
 
-	            	<div className="col--2__title">
-              		Berkeley Model United Nations (BMUN)
-            		</div>
-	     					<p>
-	     						Berkeley Model United Nations is a student run organization on the UC Berkeley campus dedicated to continuing its six decades of excellence as the world’s premier 
-			            — and very first — United Nations simulation. Every March, over 1,600 high school students from all over the world come to Berkeley to participate in Berkeley Model United Nations. 
-			            Entering its 65th session, BMUN’s mission is to spread awareness of international issues and the spirit of diplomacy through UN simulations. 
-			            We also aim to create an educational experience for high school student, to help them realize their potential in public speaking as well as policy debate. We do this by serving 
-			            as head chairs on a diverse group of committees in which we help to facilitate delegate education through substantive diplomatic debate.
-	            	</p>
+            	<div className="col--2__title">
+            		Berkeley Model United Nations (BMUN)
+          		</div>
+     					<p>
+     						Berkeley Model United Nations is a student run organization on the UC Berkeley campus dedicated to continuing its six decades of excellence as the world’s premier 
+		            — and very first — United Nations simulation. Every March, over 1,600 high school students from all over the world come to Berkeley to participate in Berkeley Model United Nations. 
+		            Entering its 65th session, BMUN’s mission is to spread awareness of international issues and the spirit of diplomacy through UN simulations. 
+		            We also aim to create an educational experience for high school student, to help them realize their potential in public speaking as well as policy debate. We do this by serving 
+		            as head chairs on a diverse group of committees in which we help to facilitate delegate education through substantive diplomatic debate.
+            	</p>
 
-	            	<div className="col--2__title">
-              		Delta Phi Epsilon
-            		</div>
-	     					<p>
-	     						Delta Phi Epsilon is Cals' only co-ed professional foreign service and international relations fraternity. 
-			            We strive to educate our members on current events and international affairs, engage them in the international 
-			            community through philanthropy and service and allow them to explore and prepare for careers in international affairs.
-	            	</p>
+            	<div className="col--2__title">
+            		Delta Phi Epsilon
+          		</div>
+     					<p>
+     						Delta Phi Epsilon is Cals' only co-ed professional foreign service and international relations fraternity. 
+		            We strive to educate our members on current events and international affairs, engage them in the international 
+		            community through philanthropy and service and allow them to explore and prepare for careers in international affairs.
+            	</p>
 
-	            	<div className="col--2__title">
-              		Sigma Iota Rho
-            		</div>
-	     					<p>
-	     						Sigma Iota Rho is a national Honors Society for International Studies founded in 1984 and headquartered at the University of Pennsylvania. 
-			            Established at UC Berkeley in the Fall of 2012, our chapter offers opportunities to closely interact with fellow IAS students, alumni, 
-			            and faculty, attend speaking and professional development events, and the opportunity to be published in the national peer-reviewed Journal
-			            of International Relations. We were recently awarded the Chapter Spotlight Award from the National Organization, which is given to the chapter 
-			            that best exemplifies passion for, engagement with, and academic excellence in international studies.
-	            	</p>
+            	<div className="col--2__title">
+            		Sigma Iota Rho
+          		</div>
+     					<p>
+     						Sigma Iota Rho is a national Honors Society for International Studies founded in 1984 and headquartered at the University of Pennsylvania. 
+		            Established at UC Berkeley in the Fall of 2012, our chapter offers opportunities to closely interact with fellow IAS students, alumni, 
+		            and faculty, attend speaking and professional development events, and the opportunity to be published in the national peer-reviewed Journal
+		            of International Relations. We were recently awarded the Chapter Spotlight Award from the National Organization, which is given to the chapter 
+		            that best exemplifies passion for, engagement with, and academic excellence in international studies.
+            	</p>
 
-	            	<div className="col--2__title">
-              		UC Berkeley Model United Nations (UCBMUN)
-            		</div>
-	     					<p>
-	     						UC Berkeley Model United Nations (UCBMUN) engages Berkeley students in debate and discourse on contemporary and historical topics relevant
-			            to international relations, diplomacy, and the United Nations. Students act as delegates representing a country,
-			            NGO, or historical figure as they work to solve international issues through a combination of debate and negotiation. 
-			            Members of UCBMUN are able to improve upon their public speaking, creative problem solving, and interpersonal skills
-			            while learning about a wide range of historical and current foreign affairs. UCBMUN is the official intercollegiate 
-			            team that represents UC Berkeley at eight conferences across the US annually; this travel team is one of the most 
-			            competitive and highest ranked teams in North America. In addition, UCBMUN hosts an annual collegiate conference 
-			            in San Francisco every March, attended by 600 delegates from 45 schools around the world.
-          			</p>
+            	<div className="col--2__title">
+            		UC Berkeley Model United Nations (UCBMUN)
+          		</div>
+     					<p>
+     						UC Berkeley Model United Nations (UCBMUN) engages Berkeley students in debate and discourse on contemporary and historical topics relevant
+		            to international relations, diplomacy, and the United Nations. Students act as delegates representing a country,
+		            NGO, or historical figure as they work to solve international issues through a combination of debate and negotiation. 
+		            Members of UCBMUN are able to improve upon their public speaking, creative problem solving, and interpersonal skills
+		            while learning about a wide range of historical and current foreign affairs. UCBMUN is the official intercollegiate 
+		            team that represents UC Berkeley at eight conferences across the US annually; this travel team is one of the most 
+		            competitive and highest ranked teams in North America. In addition, UCBMUN hosts an annual collegiate conference 
+		            in San Francisco every March, attended by 600 delegates from 45 schools around the world.
+        			</p>
 	     		</div>
 	     	</div>
 
 	     	<div className="col col--1">
 	     		Becoming a Member Organization
 	     	</div>
-	     		<div className="col col--2">
-	     			<div className="col--2__section">
-	     					IRC membership is open to all registered student organizations (RSOs) at Berkeley who focus on international affairs 
-		            and seek to foster cooperation among international relations organizations on campus. 
-		            Organizations interested in joining the IRC must submit a formal statement of interest to the Secretary-General
-		            detailing their international relations focus, their interest and level of involvement in the IRC.  Please 
-		            reach out to ircofberkeley@gmail.com to submit a statement of interest, or with any questions regarding joining the IRC! 
-	     			</div>
-	     		</div>
+     		<div className="col col--2">
+   			<div className="col--2__section">
+   					IRC membership is open to all registered student organizations (RSOs) at Berkeley who focus on international affairs 
+            and seek to foster cooperation among international relations organizations on campus. 
+            Organizations interested in joining the IRC must submit a formal statement of interest to the Secretary-General
+            detailing their international relations focus, their interest and level of involvement in the IRC.  Please 
+            reach out to ircofberkeley@gmail.com to submit a statement of interest, or with any questions regarding joining the IRC! 
+   			</div>
+   		 </div>
 
 	     	<div className="col col--1">
         	Leadership

@@ -1,8 +1,5 @@
 // About
 .page--about {
-	margin-left: 50px;
-	margin-right: 50px;
-
 	.section__title {
 		text-align: center;
 	}
@@ -23,11 +20,10 @@
 			height: 280px;
 			margin-bottom: 1%;
 
-
 			h4 {
 				font-size: 18px;
-	            font-weight: 600;
-	            color: teal;
+        font-weight: 600;
+        color: teal;
 			}
 			
 			@media (max-width:$s__breakpoint--large) {
@@ -39,8 +35,7 @@
     		text-align:center;
     		float: break;
     		overflow: auto;
-    	}
-
+    		}
 		}
 	}	
 }
