@@ -3,8 +3,25 @@ import Helmet from 'react-helmet';
 import { config } from 'config';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
+import Scroll from 'react-scroll';
+
+const Element = Scroll.Element;
+const scroller = Scroll.scroller;
 
 export default class Review extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  scroll (target) {
+    scroller.scrollTo(target, {
+      duration: 1000,
+      delay: 100,
+      smooth: true,
+      offset: -20
+    })
+  }
+
   render () {
     return (
       <div className="page page--review">
@@ -13,6 +30,9 @@ export default class Review extends Component {
         />
         <div className="page__title">
           IRC Review
+          <div className="page__nav">
+            <span className="page__nav--link" onClick={this.scroll.bind(this, "archives")}>Archives</span>
+          </div>
         </div>
         <div className="page__content">
           <div className="col col--1">Application Guidelines</div>
@@ -53,6 +73,7 @@ export default class Review extends Component {
             </div>
           </div>
           
+          <Element name="archives"></Element>
           <div className="col col--1">Archives</div>
           <div className="col col--2">
             <div className="col--2__section">
