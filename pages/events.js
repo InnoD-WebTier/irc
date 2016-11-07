@@ -10,7 +10,7 @@ const scroller = Scroll.scroller;
 
 export default class Events extends Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   scroll (target) {
@@ -30,14 +30,18 @@ export default class Events extends Component {
         />
         <div className="page__title">
           Events
-          <div className="page__nav">
-            <span className="page__nav--link" onClick={this.scroll.bind(this, "case")}>Case Competitions</span>
-            <span className="page__nav--pipe"> | </span>
-            <span className="page__nav--link" onClick={this.scroll.bind(this, "member")}>For Members</span>
-          </div>
+        </div>
+
+        <div className="page__nav">
+          <span className="page__nav--link" onClick={this.scroll.bind(this, "upcoming")}>Upcoming</span>
+          <span className="page__nav--pipe"> | </span>
+          <span className="page__nav--link" onClick={this.scroll.bind(this, "case")}>Case Competitions</span>
+          <span className="page__nav--pipe"> | </span>
+          <span className="page__nav--link" onClick={this.scroll.bind(this, "member")}>For Members</span>
         </div>
 
         <div className="page__content">
+            <Element name="upcoming"></Element>
             <div className="col col--1">Upcoming Events</div>
             <div className="col col--2">
               <div className="col--2__title">November 13th - Submission deadline for the International Relations Review of Berkeley.</div>

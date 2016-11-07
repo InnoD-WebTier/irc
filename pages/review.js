@@ -30,11 +30,14 @@ export default class Review extends Component {
         />
         <div className="page__title">
           IRC Review
-          <div className="page__nav">
-            <span className="page__nav--link" onClick={this.scroll.bind(this, "archives")}>Archives</span>
-          </div>
+        </div>
+        <div className="page__nav">
+          <span className="page__nav--link" onClick={this.scroll.bind(this, "guidelines")}>Application Guidelines</span>
+          <span className="page__nav--pipe"> | </span>
+          <span className="page__nav--link" onClick={this.scroll.bind(this, "archives")}>Archives</span>
         </div>
         <div className="page__content">
+          <Element name="guidelines"></Element>
           <div className="col col--1">Application Guidelines</div>
           <div className="col col--2">
             <div className="col--2__section">

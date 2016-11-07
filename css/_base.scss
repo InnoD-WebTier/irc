@@ -8,20 +8,21 @@
     .page__title {
       text-align: center;
       font-size: 40px;
-      padding-bottom: 45px;
+    }
       
-      .page__nav {
-        padding-top: 20px;
-        font-size: 20px;
+    .page__nav {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      font-size: 20px;
+      text-align: center;
+      
+      .page__nav--link {
+        transition: color 250ms;
+        cursor: pointer;
+        text-decoration: underline;
 
-        .page__nav--link {
-          transition: color 250ms;
-          cursor: pointer;
-          text-decoration: underline;
-
-          &:hover {
-            color: teal;
-          }
+        &:hover {
+          color: teal;
         }
       }
     }
