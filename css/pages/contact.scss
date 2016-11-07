@@ -3,25 +3,32 @@
   .contact__name{
     font-size: 27px;
     color: teal;
-    vertical-align: top;
+    vertical-align:top;
     text-align: center;
-    padding: 0px 25px;
+    padding-bottom:20px;
   }
 
   a {
     text-decoration:none !important;
   }
+
   .contact__icons {
-    text-align: center;
+    text-align:center;
+    padding-bottom:20px;
+
     .media__icon {
       font-size:200%;
       color:#C0C0C0;
-      padding-top:20px;
-      padding-bottom:40px;
+      background:#000;
+      width: 60px;
+      height: 60px;
+      padding-top:30px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right:30px;
+      line-height: 0px;
 
       &.fb {
-        margin-right:30px;
-
         &:hover {
           color:#3b5998;
           transition:color 250ms;
@@ -38,3 +45,5 @@
 	}
 }
 
+
+  

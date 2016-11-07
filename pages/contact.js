@@ -22,7 +22,7 @@ export default class Contact extends Component {
           <div className="contact__icons">
             <a href="#" target="_blank">
               <FontAwesome
-                className="media__icon fb"
+                className="media__icon circle fb"
                 name="facebook"
               /> 
             </a>
@@ -51,6 +51,7 @@ export default class Contact extends Component {
                 /> 
               </a> 
             </div>
+     
 
             <div className="contact__name">Berkeley Model United Nations</div>
             <div className="contact__icons">
