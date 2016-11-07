@@ -15,7 +15,7 @@ export default class Events extends Component {
 
   scroll (target) {
     scroller.scrollTo(target, {
-      duration: 1000,
+      duration: 500,
       delay: 100,
       smooth: true,
       offset: -20
