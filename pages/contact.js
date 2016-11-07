@@ -18,107 +18,109 @@ export default class Contact extends Component {
         </div>
 
         <div className="page__content">
-          <div className="contact__name">International Relations Council </div>
-          <div className="contact__icons">
-            <a href="#" target="_blank">
-              <FontAwesome
-                className="media__icon circle fb"
-                name="facebook"
-              /> 
-            </a>
-
-            <a href="mailto:ircofberkeley@gmail.com" target="_blank">
-              <FontAwesome
-                className="media__icon mail"
-                name="envelope"
-              /> 
-            </a>  
-            </div>
-
-            <div className="contact__name">Amnesty International</div>
-            <div className="contact__icons">
-             <a href="#" target="_blank">
-              <FontAwesome
-                className="media__icon fb"
-                name="facebook"
-              /> 
-              </a>
-
-              <a href="mailto:ucbamnesty@gmail.com" target="_blank">
-                <FontAwesome
-                  className="media__icon mail"
-                  name="envelope"
-                /> 
-              </a> 
-            </div>
-     
-
-            <div className="contact__name">Berkeley Model United Nations</div>
+          <div className="contact__body">
+            <div className="contact__name">International Relations Council </div>
             <div className="contact__icons">
               <a href="#" target="_blank">
                 <FontAwesome
-                  className="media__icon fb"
+                  className="media__icon circle fb"
                   name="facebook"
                 /> 
               </a>
 
-              <a href="mailto:info@bmun.org" target="_blank">
+              <a href="mailto:ircofberkeley@gmail.com" target="_blank">
                 <FontAwesome
                   className="media__icon mail"
                   name="envelope"
                 /> 
-              </a>
-            </div> 
+              </a>  
+              </div>
 
-            <div className="contact__name">Delta Phi Epsilon</div> 
-            <div className="contact__icons"> 
-              <a href="#" target="_blank">
+              <div className="contact__name">Amnesty International</div>
+              <div className="contact__icons">
+               <a href="#" target="_blank">
                 <FontAwesome
                   className="media__icon fb"
                   name="facebook"
                 /> 
-              </a>
+                </a>
 
-              <a href="mailto:berkeleydpe@gmail.com" target="_blank">
-                <FontAwesome
-                  className="media__icon mail"
-                  name="envelope"
-                /> 
-              </a> 
-            </div>
+                <a href="mailto:ucbamnesty@gmail.com" target="_blank">
+                  <FontAwesome
+                    className="media__icon mail"
+                    name="envelope"
+                  /> 
+                </a> 
+              </div>
+       
 
-            <div className="contact__name">Sigma Iota Rho</div>
-            <div className="contact__icons">
-              <a href="#" target="_blank">
-                <FontAwesome
-                  className="media__icon fb"
-                  name="facebook"
-                /> 
-              </a>
+              <div className="contact__name">Berkeley Model United Nations</div>
+              <div className="contact__icons">
+                <a href="#" target="_blank">
+                  <FontAwesome
+                    className="media__icon fb"
+                    name="facebook"
+                  /> 
+                </a>
 
-              <a href="mailto:sigmaiotarho.berkeley@gmail.com" target="_blank">
-                <FontAwesome
-                  className="media__icon mail"
-                  name="envelope"
-                /> 
-              </a>
-            </div>
+                <a href="mailto:info@bmun.org" target="_blank">
+                  <FontAwesome
+                    className="media__icon mail"
+                    name="envelope"
+                  /> 
+                </a>
+              </div> 
 
-            <div className="contact__name">UC Berkeley Model United Nations</div>
-            <div className="contact__icons">
-              <a href="#" target="_blank">
-                <FontAwesome
-                  className="media__icon fb"
-                  name="facebook"
-                /> 
-              </a>
+              <div className="contact__name">Delta Phi Epsilon</div> 
+              <div className="contact__icons"> 
+                <a href="#" target="_blank">
+                  <FontAwesome
+                    className="media__icon fb"
+                    name="facebook"
+                  /> 
+                </a>
 
-              <a href="mailto:president@ucbmun.org" target="_blank">
-                <FontAwesome
-                  className="media__icon mail"
-                  name="envelope"
-                /> 
-              </a>
+                <a href="mailto:berkeleydpe@gmail.com" target="_blank">
+                  <FontAwesome
+                    className="media__icon mail"
+                    name="envelope"
+                  /> 
+                </a> 
+              </div>
+
+              <div className="contact__name">Sigma Iota Rho</div>
+              <div className="contact__icons">
+                <a href="#" target="_blank">
+                  <FontAwesome
+                    className="media__icon fb"
+                    name="facebook"
+                  /> 
+                </a>
+
+                <a href="mailto:sigmaiotarho.berkeley@gmail.com" target="_blank">
+                  <FontAwesome
+                    className="media__icon mail"
+                    name="envelope"
+                  /> 
+                </a>
+              </div>
+
+              <div className="contact__name">UC Berkeley Model United Nations</div>
+              <div className="contact__icons">
+                <a href="#" target="_blank">
+                  <FontAwesome
+                    className="media__icon fb"
+                    name="facebook"
+                  /> 
+                </a>
+
+                <a href="mailto:president@ucbmun.org" target="_blank">
+                  <FontAwesome
+                    className="media__icon mail"
+                    name="envelope"
+                  /> 
+                </a>
+              </div>
             </div> 
           </div> 
         </div>   

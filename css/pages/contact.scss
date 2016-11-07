@@ -1,47 +1,50 @@
 //Contact
 .page--contact {
-  .contact__name{
-    font-size: 27px;
-    color: teal;
-    vertical-align:top;
-    text-align: center;
-    padding-bottom:20px;
-  }
+  margin:100px 100px;
+  .contact__body {
+    .contact__name {
+      font-size:27px;
+      color:teal;
+      vertical-align:top;
+      text-align: center;
+      padding-bottom:20px;
+    }
 
-  a {
-    text-decoration:none !important;
-  }
+    a {
+      text-decoration:none !important;
+    }
 
-  .contact__icons {
-    text-align:center;
-    padding-bottom:20px;
+    .contact__icons {
+      text-align:center;
+      padding-bottom:20px;
 
-    .media__icon {
-      font-size:200%;
-      color:#C0C0C0;
-      background:#000;
-      width: 60px;
-      height: 60px;
-      padding-top:30px;
-      border-radius: 50%;
-      vertical-align: middle;
-      margin-right:30px;
-      line-height: 0px;
+      .media__icon {
+        font-size:200%;
+        color:#C0C0C0;
+        background:#000;
+        width: 60px;
+        height: 60px;
+        padding-top:30px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right:30px;
+        line-height: 0px;
 
-      &.fb {
-        &:hover {
-          color:#3b5998;
-          transition:color 250ms;
-          }
-        }
-
-        &.mail {
+        &.fb {
           &:hover {
-            color:#551a8b;
+            color:#3b5998;
             transition:color 250ms;
+            }
           }
-        }
+
+          &.mail {
+            &:hover {
+              color:#551a8b;
+              transition:color 250ms;
+            }
+          }
       }
+    }
 	}
 }
 
