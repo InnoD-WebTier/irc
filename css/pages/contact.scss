@@ -1,13 +1,13 @@
 //Contact
 .page--contact {
-  margin:100px 100px;
   .contact__body {
+    margin:20px auto;
     .contact__name {
       font-size:27px;
       color:teal;
       vertical-align:top;
       text-align: center;
-      padding-bottom:20px;
+      margin-bottom:40px;
     }
 
     a {
@@ -16,7 +16,7 @@
 
     .contact__icons {
       text-align:center;
-      padding-bottom:20px;
+      margin-bottom:40px;
 
       .media__icon {
         font-size:200%;
@@ -27,7 +27,7 @@
         padding-top:30px;
         border-radius: 50%;
         vertical-align: middle;
-        margin-right:30px;
+        margin-left:30px;
         line-height: 0px;
 
         &.fb {
