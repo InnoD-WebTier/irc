@@ -1,44 +1,54 @@
 //Contact
 .page--contact {
-  margin:auto;
-  width:100%;
 
-  .contact--center {
-    width:50%;
-    margin:0 auto;
-    text-align:center;
+  .contact__body {
+    margin:20px auto;
 
-    .contact--title {
-      font-size:40px;
-      padding-top:50px;
+    .contact__name {
+      font-size:27px;
+      color:teal;
+      vertical-align:top;
+      text-align: center;
+      margin-bottom:40px;
     }
 
     a {
       text-decoration:none !important;
     }
 
-    .media--icon {
-      font-size:200%;
-      color:#C0C0C0;
-      padding-top: 40px;
+    .contact__icons {
+      text-align:center;
+      margin-bottom:40px;
 
-      &.fb {
-        margin-right:30px;
+      .media__icon {
+        font-size:200%;
+        color:#C0C0C0;
+        background:#000;
+        width: 60px;
+        height: 60px;
+        padding-top:30px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin:0 15px;
+        line-height: 0px;
 
-        &:hover {
-          color:#3b5998;
-          transition:color 250ms;
+        &.fb {
+          &:hover {
+            color:#3b5998;
+            transition:color 250ms;
+            }
+          }
 
-        }
-      }
-
-      &.mail {
-        &:hover {
-          color:#551a8b;
-          transition:color 250ms;
-        }
+          &.mail {
+            &:hover {
+              color:#551a8b;
+              transition:color 250ms;
+            }
+          }
       }
     }
-  }
+	}
 }
 
+
+  
