@@ -1,2 +1,15 @@
 // About
+.page--about {
+	.section__title {
+		text-align: center;
+	}
 
+	.col {
+		&.col--1 {
+			img {
+				width: 100%;
+			}
+
+		}
+	}
+}
