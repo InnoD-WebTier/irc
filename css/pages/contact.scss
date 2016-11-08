@@ -1,7 +1,9 @@
 //Contact
 .page--contact {
+
   .contact__body {
     margin:20px auto;
+
     .contact__name {
       font-size:27px;
       color:teal;
@@ -27,7 +29,7 @@
         padding-top:30px;
         border-radius: 50%;
         vertical-align: middle;
-        margin-left:30px;
+        margin:0 15px;
         line-height: 0px;
 
         &.fb {
