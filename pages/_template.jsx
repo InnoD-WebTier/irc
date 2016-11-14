@@ -32,6 +32,8 @@ export default class Template extends Component {
   }
 
   render () {
+    const pathname = !!(typeof window !== 'undefined') ? window.location.pathname : null;
+
     return (
       <div>
         <Headroom
@@ -53,8 +55,11 @@ export default class Template extends Component {
               <div className="navbar__link--wrapper">
                 <Link
                   to={prefixLink('/')}
-                  className="navbar__link"
+                  className={classNames('navbar__link', {
+                    'no-highlight': pathname !== prefixLink('/')
+                  })}
                   onClick={this._handleNavLink}
+                  activeClassName="active"
                 >
                   Home
                 </Link>
@@ -62,6 +67,7 @@ export default class Template extends Component {
                   to={prefixLink('/about/')}
                   className="navbar__link"
                   onClick={this._handleNavLink}
+                  activeClassName="active"
                 >
                   About
                 </Link>
@@ -69,6 +75,7 @@ export default class Template extends Component {
                   to={prefixLink('/events/')}
                   className="navbar__link"
                   onClick={this._handleNavLink}
+                  activeClassName="active"
                 >
                   Events
                 </Link>
@@ -76,6 +83,7 @@ export default class Template extends Component {
                   to={prefixLink('/review/')}
                   className="navbar__link"
                   onClick={this._handleNavLink}
+                  activeClassName="active"
                 >
                   Review
                 </Link>
@@ -83,6 +91,7 @@ export default class Template extends Component {
                   to={prefixLink('/contact/')}
                   className="navbar__link"
                   onClick={this._handleNavLink}
+                  activeClassName="active"
                 >
                   Contact
                 </Link>
