@@ -9,7 +9,7 @@ require('css/_index.scss');
 const navbarHeight = 54;
 
 export default class Template extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -25,10 +25,16 @@ export default class Template extends Component {
     });
   }
 
+  _handleNavLink(e) {
+    this.setState({
+      open: false
+    });
+  }
+
   render () {
     return (
       <div>
-        <Headroom 
+        <Headroom
           wrapperStyle={{
             maxHeight: navbarHeight
           }}>
@@ -46,37 +52,37 @@ export default class Template extends Component {
               </div>
               <div className="navbar__link--wrapper">
                 <Link
-                  to={prefixLink('/')} 
+                  to={prefixLink('/')}
                   className="navbar__link"
-                  onClick={this._handleHamburger}
+                  onClick={this._handleNavLink}
                 >
                   Home
                 </Link>
                 <Link
-                  to={prefixLink('/about/')} 
+                  to={prefixLink('/about/')}
                   className="navbar__link"
-                  onClick={this._handleHamburger}
+                  onClick={this._handleNavLink}
                 >
                   About
                 </Link>
                 <Link
-                  to={prefixLink('/events/')} 
+                  to={prefixLink('/events/')}
                   className="navbar__link"
-                  onClick={this._handleHamburger}
+                  onClick={this._handleNavLink}
                 >
                   Events
                 </Link>
                 <Link
-                  to={prefixLink('/review/')} 
+                  to={prefixLink('/review/')}
                   className="navbar__link"
-                  onClick={this._handleHamburger}
+                  onClick={this._handleNavLink}
                 >
                   Review
                 </Link>
                 <Link
-                  to={prefixLink('/contact/')} 
+                  to={prefixLink('/contact/')}
                   className="navbar__link"
-                  onClick={this._handleHamburger}
+                  onClick={this._handleNavLink}
                 >
                   Contact
                 </Link>
