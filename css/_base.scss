@@ -1,6 +1,8 @@
 // Base styles that can be applied to any element
 
 .content {
+  font-family: 'Open Sans', sans-serif;
+
   .page {
     color: #404040;
     padding: 50px 0px;
@@ -52,6 +54,8 @@
           width: 72%;
           margin-bottom: 50px;
           padding: 0px 25px;
+          line-height: 2em;
+
 
           .col--2__title {
             font-size: 23px;
@@ -65,7 +69,6 @@
 
           .col--2__section {
             margin-bottom: 50px;
-            line-height: 30px;
 
             ol {
               margin-left: 20px;

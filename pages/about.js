@@ -254,15 +254,14 @@ export default class About extends Component {
                 Representative: Sigma Iota Rho
               </div>
               <div className="col--2__section>">
-                <b>Aurora Ling</b> is a third-year UC Berkeley student majoring in Peace and Conflict Studies with a concentration
-              in Human Rights. She is the External Vice President of Sigma Iota Rho – UC Berkeley Chapter. She is also
-              the Director and Editor-in-Chief of The International Relations Review of Berkeley, the official journal
-              of the IR Council. Aurora has lived in 9 different cities, including ones in China and Canada. She recently
-              traveled extensively through Europe and studied abroad with the Gilman Scholarship at the London School of
-              Economics (LSE). She now works as an intern with the Global South Unit at the LSE. Her favorite things include
-              learning languages, reading good books, lights, socks, and ice cream. Aurora became a Christian her second year
-              of college, and now spends most of her time with her church doing ministry. Her goal in life is to champion human
-              rights, be a professor, and continue being a minister of the gospel.
+                <b>Aurora Ling</b> is a third-year UC Berkeley student majoring in Peace and Conflict Studies. She is the
+                External Vice President of Sigma Iota Rho – UC Berkeley Chapter and the Editor-in-Chief of both The
+                International Relations Review of Berkeley and To An Unknown God. Aurora has lived in 9 different cities,
+                including ones in China and Canada. She recently traveled extensively through Europe and studied abroad with
+                the Gilman Scholarship at the London School of Economics (LSE). She now works as an intern with the Global
+                South Unit at the LSE and as an assistant for the UC Berkeley School of Law. Her favorite things include
+                learning languages, reading good books, lights, socks, and ice cream. Aurora’s aims in life include championing
+                human rights, obtaining a PhD, and attending seminary school.
               </div>
             </div>
 
@@ -271,7 +270,7 @@ export default class About extends Component {
             </div>
             <div className="col col--2 col--image--caption">
               <div className="col--2__title">
-                Representative: Amnesty International
+                Representative: UC Berkeley Model United Nations
               </div>
               <div className="col--2__section>">
                 <b>Austin Smith</b> is a second-year Berkeley student and is an editor for the International Relations Review. He's
