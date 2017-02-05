@@ -9,12 +9,9 @@ export default class Home extends Component {
     return (
       <div 
         className="page page--home"
-//         style={{
-//           backgroundImage: `url(${prefixLink('/img/logo.jpg')})`
-//         }}
       >
         <div className="img--home">
-          <img src="/img/logo.jpg"/>
+          <img src={ prefixLink("/img/logo.jpg") }/>
         </div>
         <Helmet
           title={config.siteTitle}
